@@ -1,4 +1,4 @@
-import { GLOBAL_TOTAL_KILLS } from './utils.mjs';
+import fs from 'node:fs/promises';
 
 // Map from killStatsName => prettyName.
 const normalizedToPrettyNames = new Map([
@@ -91,7 +91,7 @@ const normalizedToPrettyNames = new Map([
 	['Drume', 'Drume'],
 	['Duke Krule', 'Duke Krule'],
 	['Earl Osam', 'Earl Osam'],
-	['Earth Overlords', 'Earth Overlords'],
+	['Earth Overlords', 'Earth Overlord'],
 	['Ekatrix', 'Ekatrix'],
 	['Eliz The Unyielding', 'Eliz the Unyielding'],
 	['Elvira Hammerthrust', 'Elvira Hammerthrust'],
@@ -466,7 +466,7 @@ const normalizedToPrettyNames = new Map([
 	['badgers', 'badger'],
 	['baleful bunnies', 'baleful bunny'],
 	['bandits', 'bandit'],
-	['banes of light', 'banes of light'],
+	['banes of light', 'bane of light'],
 	['banshees', 'banshee'],
 	['barbarian bloodwalkers', 'barbarian bloodwalker'],
 	['barbarian brutetamers', 'barbarian brutetamer'],
@@ -588,7 +588,7 @@ const normalizedToPrettyNames = new Map([
 	['cult scholars', 'cult scholar'],
 	['cursed books', 'cursed book'],
 	['cursed prospectors', 'cursed prospector'],
-	['cyclopes', 'cyclop'],
+	['cyclopes', 'cyclops'],
 	['cyclopes drone', 'cyclops drone'],
 	['cyclopes smith', 'cyclops smith'],
 	['damaged crystal golems', 'damaged crystal golem'],
@@ -617,7 +617,7 @@ const normalizedToPrettyNames = new Map([
 	['deepling elites', 'deepling elite'],
 	['deepling guards', 'deepling guard'],
 	['deepling master librarians', 'deepling master librarian'],
-	['deepling scouts', 'deepling scouts'],
+	['deepling scouts', 'deepling scout'],
 	['deepling spellsingers', 'deepling spellsinger'],
 	['deepling tyrants', 'deepling tyrant'],
 	['deepling warriors', 'deepling warrior'],
@@ -990,7 +990,7 @@ const normalizedToPrettyNames = new Map([
 	['minotaurs', 'minotaur'],
 	['misguided bullies', 'misguided bully'],
 	['misguided shadows', 'misguided shadow'],
-	['misguided thieves', 'misguided thieve'],
+	['misguided thieves', 'misguided thief'],
 	['modified gnarlhounds', 'modified gnarlhound'],
 	['moles', 'mole'],
 	['monks', 'monk'],
@@ -1084,7 +1084,7 @@ const normalizedToPrettyNames = new Map([
 	['pirate ghosts', 'pirate ghost'],
 	['pirate marauders', 'pirate marauder'],
 	['pirate skeletons', 'pirate skeleton'],
-	['pixies', 'pixy'],
+	['pixies', 'pixie'],
 	['plaguesmiths', 'plaguesmith'],
 	['planedweller', 'planedweller'],
 	['players', 'player'],
@@ -1097,7 +1097,7 @@ const normalizedToPrettyNames = new Map([
 	['pookas', 'pooka'],
 	['possessed trees', 'possessed tree'],
 	['priestesses', 'priestess'],
-	['priestesses of the wild sun', 'priestesses of the wild sun'],
+	['priestesses of the wild sun', 'priestess of the wild sun'],
 	['primal pack beasts', 'primal pack beast'],
 	['putrid mummies', 'putrid mummy'],
 	['quara constrictor scouts', 'quara constrictor scout'],
@@ -1327,7 +1327,7 @@ const normalizedToPrettyNames = new Map([
 	['water buffalos', 'water buffalo'],
 	['water elementals', 'water elemental'],
 	['weakened demons', 'weakened demon'],
-	['weakened frazzlemaws', 'weakened frazzlemaws'],
+	['weakened frazzlemaws', 'weakened frazzlemaw'],
 	['weakened glooth horror', 'weakened glooth horror'],
 	['weepers', 'weeper'],
 	['werebadgers', 'werebadger'],
@@ -1380,12 +1380,29 @@ export const toKillStatsName = (prettyName) => {
 	return killStatsName;
 };
 
-for (const [killStatsName, prettyName] of normalizedToPrettyNames) {
-	console.assert(GLOBAL_TOTAL_KILLS.has(killStatsName), `Expected ${killStatsName} to appear in global kill stats.`);
-	if (killStatsName !== prettyName) {
-		console.assert(!GLOBAL_TOTAL_KILLS.has(prettyName), `Expected ${prettyName} to NOT appear in global kill stats.`);
+const test = async () => {
+	const readKillStatNames = async () => {
+		const filePath = './data/_global-total/names.json';
+		const json = await fs.readFile(filePath);
+		const array = JSON.parse(json);
+		const set = new Set(array);
+		return set;
+	};
+
+	const KILL_STAT_NAMES = await readKillStatNames();
+
+	for (const [killStatsName, prettyName] of normalizedToPrettyNames) {
+		console.assert(KILL_STAT_NAMES.has(killStatsName), `Expected ${killStatsName} to appear in global kill stats.`);
+		if (killStatsName !== prettyName) {
+			console.assert(!KILL_STAT_NAMES.has(prettyName), `Expected ${prettyName} to NOT appear in global kill stats.`);
+		}
 	}
-}
-for (const race of GLOBAL_TOTAL_KILLS.keys()) {
-	console.assert(normalizedToPrettyNames.has(race), `Missing normalization map entry: ${race}`);
+
+	for (const race of KILL_STAT_NAMES) {
+		console.assert(normalizedToPrettyNames.has(race), `Missing normalization map entry: ${race}`);
+	}
+};
+
+if (process.env.TEST) {
+	await test();
 }
