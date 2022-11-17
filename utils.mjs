@@ -10,7 +10,7 @@ const readKillStats = async () => {
 	return map;
 };
 
-const GLOBAL_TOTAL_KILLS = await readKillStats();
+export const GLOBAL_TOTAL_KILLS = await readKillStats();
 
 export const createKillsPerCategoryMap = (creaturesPerCategory) => {
 	const GLOBAL_TOTAL_KILLS_PER_CATEGORY = new Map();
