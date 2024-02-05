@@ -7,7 +7,7 @@ const slugify = (name) => {
 
 const getWorlds = async () => {
 	console.log('Getting list of Tibia worlds…');
-	const response = await fetch('https://api.tibiadata.com/v3/worlds');
+	const response = await fetch('https://api.tibiadata.com/v4/worlds');
 	const data = await response.json();
 	const regularWorlds = data.worlds.regular_worlds;
 	const worldNames = regularWorlds.map((world) => world.name);
@@ -16,7 +16,7 @@ const getWorlds = async () => {
 
 const getKillStatsForWorld = async (worldName) => {
 	try {
-		const response = await fetch(`https://api.tibiadata.com/v3/killstatistics/${slugify(worldName)}`);
+		const response = await fetch(`https://api.tibiadata.com/v4/killstatistics/${slugify(worldName)}`);
 		const data = await response.json();
 		console.log(`Processing kill stats for world ${worldName}…`);
 		return data;
