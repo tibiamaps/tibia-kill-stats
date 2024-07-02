@@ -209,6 +209,7 @@ const BOSSES_PER_CATEGORY = new Map([
 		'The Moonlight Aster',
 		'The Nightmare Beast',
 		'The Pale Worm',
+		'The Rootkraken',
 		'The Sandking',
 		'The Scourge of Oblivion',
 		'The Souldespoiler',
@@ -286,6 +287,8 @@ const BOSSES_PER_CATEGORY = new Map([
 		'Rahemos',
 		'Rotspit',
 		'Shadowstalker',
+		'Sugar Daddy',
+		'Sugar Mommy',
 		'Tanjis',
 		'Thalas',
 		'Thawing Dragon Lord',
@@ -438,6 +441,11 @@ const BOSSES_PER_CATEGORY = new Map([
 		'Malofur Mangrinder',
 		'Maxxenius',
 		'Plagueroot',
+	])],
+
+	['candia-boss', new Set([
+		'Sugar Daddy',
+		'Sugar Mommy',
 	])],
 
 	['oramond-voted-boss', new Set([
