@@ -700,7 +700,7 @@
 				"last_day_players_killed": 0,
 				"last_day_killed": 1,
 				"last_week_players_killed": 0,
-				"last_week_killed": 1
+				"last_week_killed": 2
 			},
 			{
 				"race": "Gaffir",
@@ -1078,7 +1078,7 @@
 				"last_day_players_killed": 0,
 				"last_day_killed": 8,
 				"last_week_players_killed": 0,
-				"last_week_killed": 8
+				"last_week_killed": 63
 			},
 			{
 				"race": "Mahrdis",
@@ -2114,7 +2114,7 @@
 				"last_day_players_killed": 0,
 				"last_day_killed": 1,
 				"last_week_players_killed": 0,
-				"last_week_killed": 1
+				"last_week_killed": 2
 			},
 			{
 				"race": "Xogixath",
@@ -4287,13 +4287,6 @@
 				"last_week_killed": 70
 			},
 			{
-				"race": "fury of the emperor",
-				"last_day_players_killed": 0,
-				"last_day_killed": 0,
-				"last_week_players_killed": 0,
-				"last_week_killed": 1
-			},
-			{
 				"race": "gang members",
 				"last_day_players_killed": 0,
 				"last_day_killed": 67,
@@ -5398,13 +5391,6 @@
 				"last_day_killed": 40,
 				"last_week_players_killed": 0,
 				"last_week_killed": 256
-			},
-			{
-				"race": "magma bubble",
-				"last_day_players_killed": 0,
-				"last_day_killed": 0,
-				"last_week_players_killed": 0,
-				"last_week_killed": 55
 			},
 			{
 				"race": "magma crawlers",
@@ -6821,7 +6807,7 @@
 				"last_week_killed": 1264
 			},
 			{
-				"race": "scorn of the emperor",
+				"race": "Scorn of the Emperor",
 				"last_day_players_killed": 0,
 				"last_day_killed": 0,
 				"last_week_players_killed": 0,
@@ -7157,7 +7143,7 @@
 				"last_week_killed": 555
 			},
 			{
-				"race": "spite of the emperor",
+				"race": "Spite of the Emperor",
 				"last_day_players_killed": 0,
 				"last_day_killed": 0,
 				"last_week_players_killed": 0,
@@ -8156,13 +8142,6 @@
 				"last_day_killed": 710,
 				"last_week_players_killed": 2,
 				"last_week_killed": 8570
-			},
-			{
-				"race": "wrath of the emperor",
-				"last_day_players_killed": 0,
-				"last_day_killed": 0,
-				"last_week_players_killed": 0,
-				"last_week_killed": 1
 			},
 			{
 				"race": "wyrms",

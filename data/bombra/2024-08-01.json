@@ -644,7 +644,7 @@
 				"last_day_players_killed": 0,
 				"last_day_killed": 1,
 				"last_week_players_killed": 0,
-				"last_week_killed": 1
+				"last_week_killed": 3
 			},
 			{
 				"race": "Gaffir",
@@ -1330,7 +1330,7 @@
 				"last_day_players_killed": 0,
 				"last_day_killed": 1,
 				"last_week_players_killed": 0,
-				"last_week_killed": 1
+				"last_week_killed": 3
 			},
 			{
 				"race": "Shadowpelt",
@@ -1449,7 +1449,7 @@
 				"last_day_players_killed": 0,
 				"last_day_killed": 1,
 				"last_week_players_killed": 0,
-				"last_week_killed": 1
+				"last_week_killed": 3
 			},
 			{
 				"race": "Splasher",
@@ -1820,7 +1820,7 @@
 				"last_day_players_killed": 0,
 				"last_day_killed": 1,
 				"last_week_players_killed": 0,
-				"last_week_killed": 2
+				"last_week_killed": 5
 			},
 			{
 				"race": "The Rage",
@@ -2044,7 +2044,7 @@
 				"last_day_players_killed": 0,
 				"last_day_killed": 1,
 				"last_week_players_killed": 0,
-				"last_week_killed": 1
+				"last_week_killed": 3
 			},
 			{
 				"race": "Xenia",
@@ -4245,13 +4245,6 @@
 				"last_week_killed": 100
 			},
 			{
-				"race": "fury of the emperor",
-				"last_day_players_killed": 0,
-				"last_day_killed": 0,
-				"last_week_players_killed": 0,
-				"last_week_killed": 2
-			},
-			{
 				"race": "gang members",
 				"last_day_players_killed": 0,
 				"last_day_killed": 18,
@@ -5323,7 +5316,7 @@
 				"last_week_killed": 324
 			},
 			{
-				"race": "magma bubble",
+				"race": "Magma Bubble",
 				"last_day_players_killed": 0,
 				"last_day_killed": 0,
 				"last_week_players_killed": 0,
@@ -6730,13 +6723,6 @@
 				"last_week_killed": 528
 			},
 			{
-				"race": "scorn of the emperor",
-				"last_day_players_killed": 0,
-				"last_day_killed": 0,
-				"last_week_players_killed": 0,
-				"last_week_killed": 2
-			},
-			{
 				"race": "scorpions",
 				"last_day_players_killed": 0,
 				"last_day_killed": 782,
@@ -7052,13 +7038,6 @@
 				"last_week_killed": 322
 			},
 			{
-				"race": "spite of the emperor",
-				"last_day_players_killed": 0,
-				"last_day_killed": 0,
-				"last_week_players_killed": 0,
-				"last_week_killed": 2
-			},
-			{
 				"race": "spitters",
 				"last_day_players_killed": 0,
 				"last_day_killed": 23,
@@ -7316,13 +7295,6 @@
 				"last_day_killed": 547,
 				"last_week_players_killed": 5,
 				"last_week_killed": 7329
-			},
-			{
-				"race": "the primal menace",
-				"last_day_players_killed": 0,
-				"last_day_killed": 0,
-				"last_week_players_killed": 0,
-				"last_week_killed": 3
 			},
 			{
 				"race": "thieves",
@@ -8086,13 +8058,6 @@
 				"last_day_killed": 512,
 				"last_week_players_killed": 3,
 				"last_week_killed": 4031
-			},
-			{
-				"race": "wrath of the emperor",
-				"last_day_players_killed": 0,
-				"last_day_killed": 0,
-				"last_week_players_killed": 0,
-				"last_week_killed": 2
 			},
 			{
 				"race": "wyrms",

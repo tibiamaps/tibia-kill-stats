@@ -3,7 +3,7 @@ import glob from 'glob';
 
 // legacyKillStatsName => newKillStatsName
 const map = new Map([
-	['Solid Frozen Horrors', 'Solid Frozen Horror'],
+	['incredibly old witches', 'Incredibly Old Witch'],
 ]);
 
 const handleFile = async (fileName) => {
