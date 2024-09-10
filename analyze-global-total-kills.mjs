@@ -68,6 +68,21 @@ const fileNames = glob.sync('./data/*/*.json', {
 		'./data/wizera/latest.json',
 		'./data/xandebra/latest.json',
 		'./data/zenobra/latest.json',
+		// Former worlds as of 2024-09-09:
+		'./data/axera/latest.json',
+		'./data/bombra/latest.json',
+		'./data/castela/latest.json',
+		'./data/damora/latest.json',
+		'./data/guerribra/latest.json',
+		'./data/impulsa/latest.json',
+		'./data/kardera/latest.json',
+		'./data/kendria/latest.json',
+		'./data/mykera/latest.json',
+		'./data/nadora/latest.json',
+		'./data/ousabra/latest.json',
+		'./data/pulsera/latest.json',
+		'./data/syrena/latest.json',
+		'./data/utobra/latest.json',
 	],
 });
 for (const fileName of fileNames) {

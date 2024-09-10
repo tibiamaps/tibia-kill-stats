@@ -623,6 +623,7 @@ const normalizedToPrettyNames = new Map([
 	['chargers', 'charger'],
 	['charging Outburst', 'charging Outburst'],
 	['chasm spawns', 'chasm spawn'],
+	['cheeky sugar cubes', 'cheeky sugar cube'],
 	['chickens', 'chicken'],
 	['chocolate blobs', 'chocolate blob'],
 	['choking fears', 'choking fear'],
