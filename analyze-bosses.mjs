@@ -122,6 +122,7 @@ const BOSSES_PER_CATEGORY = new Map([
 		'Amenef the Burning',
 		'Ancient Spawn of Morgathla',
 		'Anomaly',
+		'Arbaziloth',
 		'Ayana the Crimson Curse',
 		'Bibby Bloodbath',
 		'Black Vixen',
@@ -258,6 +259,7 @@ const BOSSES_PER_CATEGORY = new Map([
 		'Glooth Fairy',
 		'Golgordan',
 		'Gorga',
+		'Gralvalon',
 		'Grand Canon Dominus',
 		'Grand Chaplain Gaunder',
 		'Grand Commander Soeren',
@@ -273,6 +275,7 @@ const BOSSES_PER_CATEGORY = new Map([
 		'Mad Mage',
 		'Madareth',
 		'Mahrdis',
+		'Malvaroth',
 		'Marziel',
 		'Maw',
 		'Mephiles',
@@ -298,6 +301,7 @@ const BOSSES_PER_CATEGORY = new Map([
 		'The Lord of the Lice',
 		'The Ravager',
 		'The Shatterer',
+		'Twisterror',
 		'Ushuriel',
 		'Vashresamun',
 		'Xogixath',
@@ -691,6 +695,15 @@ const BOSSES_PER_CATEGORY = new Map([
 		'Vilear',
 		// “Final” boss, tracking completion of the boss room.
 		'Dragon Pack',
+	])],
+
+	['azzilon-boss', new Set([
+		// Bane bosses.
+		'Gralvalon',
+		'Malvaroth',
+		'Twisterror',
+		// Archfoe boss.
+		'Arbaziloth',
 	])],
 
 ]);
