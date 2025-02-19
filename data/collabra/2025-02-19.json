@@ -206,13 +206,6 @@
 				"last_week_killed": 173
 			},
 			{
-				"race": "Bloodjaws",
-				"last_day_players_killed": 0,
-				"last_day_killed": 0,
-				"last_week_players_killed": 3,
-				"last_week_killed": 2712
-			},
-			{
 				"race": "Bloodpaw",
 				"last_day_players_killed": 0,
 				"last_day_killed": 1,
@@ -610,13 +603,6 @@
 				"last_day_killed": 1,
 				"last_week_players_killed": 0,
 				"last_week_killed": 6
-			},
-			{
-				"race": "Elder Bloodjaws",
-				"last_day_players_killed": 0,
-				"last_day_killed": 6,
-				"last_week_players_killed": 1,
-				"last_week_killed": 2024
 			},
 			{
 				"race": "Eliz The Unyielding",
@@ -2848,8 +2834,8 @@
 				"race": "bloodjaws",
 				"last_day_players_killed": 0,
 				"last_day_killed": 192,
-				"last_week_players_killed": 0,
-				"last_week_killed": 192
+				"last_week_players_killed": 3,
+				"last_week_killed": 2904
 			},
 			{
 				"race": "blue djinns",
@@ -4240,9 +4226,9 @@
 			{
 				"race": "elder bloodjaws",
 				"last_day_players_killed": 0,
-				"last_day_killed": 375,
-				"last_week_players_killed": 0,
-				"last_week_killed": 375
+				"last_day_killed": 381,
+				"last_week_players_killed": 1,
+				"last_week_killed": 2399
 			},
 			{
 				"race": "elder bonelords",

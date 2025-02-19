@@ -213,7 +213,7 @@
 				"last_week_killed": 237
 			},
 			{
-				"race": "Bloodjaws",
+				"race": "bloodjaws",
 				"last_day_players_killed": 0,
 				"last_day_killed": 0,
 				"last_week_players_killed": 0,
@@ -582,13 +582,6 @@
 				"last_day_killed": 1,
 				"last_week_players_killed": 0,
 				"last_week_killed": 14
-			},
-			{
-				"race": "Elder Bloodjaws",
-				"last_day_players_killed": 0,
-				"last_day_killed": 0,
-				"last_week_players_killed": 1,
-				"last_week_killed": 823
 			},
 			{
 				"race": "Enusat the Onyx Wing",
@@ -4080,8 +4073,8 @@
 				"race": "elder bloodjaws",
 				"last_day_players_killed": 0,
 				"last_day_killed": 108,
-				"last_week_players_killed": 0,
-				"last_week_killed": 108
+				"last_week_players_killed": 1,
+				"last_week_killed": 931
 			},
 			{
 				"race": "elder bonelords",

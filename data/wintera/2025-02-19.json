@@ -213,7 +213,7 @@
 				"last_week_killed": 324
 			},
 			{
-				"race": "Bloodjaws",
+				"race": "bloodjaws",
 				"last_day_players_killed": 0,
 				"last_day_killed": 0,
 				"last_week_players_killed": 0,
@@ -582,13 +582,6 @@
 				"last_day_killed": 2,
 				"last_week_players_killed": 0,
 				"last_week_killed": 12
-			},
-			{
-				"race": "Elder Bloodjaws",
-				"last_day_players_killed": 0,
-				"last_day_killed": 12,
-				"last_week_players_killed": 0,
-				"last_week_killed": 174
 			},
 			{
 				"race": "Eliz The Unyielding",
@@ -4191,9 +4184,9 @@
 			{
 				"race": "elder bloodjaws",
 				"last_day_players_killed": 0,
-				"last_day_killed": 12,
+				"last_day_killed": 24,
 				"last_week_players_killed": 0,
-				"last_week_killed": 12
+				"last_week_killed": 186
 			},
 			{
 				"race": "elder bonelords",

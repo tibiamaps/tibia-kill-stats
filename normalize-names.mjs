@@ -40,7 +40,6 @@ const normalizedToPrettyNames = new Map([
 	['Black Knight', 'Black Knight'],
 	['Black Vixen', 'Black Vixen'],
 	['Bloodback', 'Bloodback'],
-	['Bloodjaws', 'bloodjaw'], // This is more like a creature than a boss.
 	['Bloodpaw', 'Bloodpaw'],
 	['Bone Capsule', 'Bone Capsule'],
 	['Boogey', 'Boogey'],
@@ -113,7 +112,6 @@ const normalizedToPrettyNames = new Map([
 	['Earl Osam', 'Earl Osam'],
 	['Earth Overlord', 'Earth Overlord'],
 	['Ekatrix', 'Ekatrix'],
-	['Elder Bloodjaws', 'elder bloodjaw'], // This is more like a creature than a boss.
 	['Eliz The Unyielding', 'Eliz the Unyielding'],
 	['Elvira Hammerthrust', 'Elvira Hammerthrust'],
 	['Energy Overlord', 'Energy Overlord'],
@@ -571,6 +569,7 @@ const normalizedToPrettyNames = new Map([
 	['blood crabs', 'blood crab'],
 	['blood hands', 'blood hand'],
 	['blood priests', 'blood priest'],
+	['bloodjaws', 'bloodjaw'],
 	['blooms of doom', 'bloom of doom'],
 	['blue djinns', 'blue djinn'],
 	['boar mans', 'boar man'],
@@ -793,6 +792,7 @@ const normalizedToPrettyNames = new Map([
 	['earworms', 'earworm'],
 	['efreet', 'efreet'],
 	['eggs', 'egg'],
+	['elder bloodjaws', 'elder bloodjaw'],
 	['elder bonelords', 'elder bonelord'],
 	['elder forest furies', 'elder forest fury'],
 	['elder mummies', 'elder mummy'],
