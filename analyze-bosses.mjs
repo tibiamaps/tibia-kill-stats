@@ -75,6 +75,7 @@ const BOSSES_PER_CATEGORY = new Map([
 		'Plagueroot',
 		'Raxias',
 		'Robby the Reckless',
+		'Rotrender',
 		'Rotworm Queen',
 		'Rukor Zad',
 		'Shlorg',
@@ -360,6 +361,7 @@ const BOSSES_PER_CATEGORY = new Map([
 		'Oodok Witchmaster',
 		'Orshabaal',
 		'Robby the Reckless',
+		'Rotrender',
 		'Rotworm Queen',
 		'Rukor Zad',
 		'Shlorg',
@@ -704,6 +706,8 @@ const BOSSES_PER_CATEGORY = new Map([
 		'Twisterror',
 		// Archfoe boss.
 		'Arbaziloth',
+		// Nemesis boss.
+		'Rotrender',
 	])],
 
 ]);
