@@ -1,8 +1,6 @@
-import {
-	createKillsPerCategoryMap,
-	writeMap,
-} from './utils.mjs';
+import { createKillsPerCategoryMap, writeMap } from './utils.mjs';
 
+// prettier-ignore
 const BOSSES_PER_CATEGORY = new Map([
 
 	/* Official boss categories as per the in-game Bosstiary. */
@@ -710,14 +708,35 @@ const BOSSES_PER_CATEGORY = new Map([
 		'Rotrender',
 	])],
 
+	['between-the-lines-boss', new Set([
+		// Bane bosses.
+		'Inkwing',
+		'Sir Leonard',
+
+		// Archfoe boss.
+		'Blight Mariner',
+		'Tropical Desolator',
+		'Wrathful Archivist',
+
+		// Nemesis boss.
+		'Sir Leopold',
+	])],
+
+	['bloody-tusks-boss', new Set([
+		'Vladrukh',
+	])],
+
 ]);
 
 // All bosses.
-BOSSES_PER_CATEGORY.set('boss', new Set([
-	...BOSSES_PER_CATEGORY.get('nemesis-boss'),
-	...BOSSES_PER_CATEGORY.get('archfoe-boss'),
-	...BOSSES_PER_CATEGORY.get('bane-boss'),
-]));
+BOSSES_PER_CATEGORY.set(
+	'boss',
+	new Set([
+		...BOSSES_PER_CATEGORY.get('nemesis-boss'),
+		...BOSSES_PER_CATEGORY.get('archfoe-boss'),
+		...BOSSES_PER_CATEGORY.get('bane-boss'),
+	]),
+);
 
 const killsPerCategory = createKillsPerCategoryMap(BOSSES_PER_CATEGORY);
 
