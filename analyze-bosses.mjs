@@ -130,7 +130,7 @@ const BOSSES_PER_CATEGORY = new Map([
 		'Brokul',
 		'Chagorz',
 		'Count Vlarkorth',
-		'Count Warlock',
+		'Court Warlock',
 		'Darkfang',
 		'Deathstrike',
 		'Dragon Pack',
