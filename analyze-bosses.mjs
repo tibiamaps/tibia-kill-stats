@@ -740,7 +740,7 @@ const BOSSES_PER_CATEGORY = new Map([
 		'Overseer Osverger',
 
 		// Archfoe boss.
-		'Count Warlock',
+		'Court Warlock',
 	])],
 
 	['roost-of-the-graveborn-boss', new Set([
