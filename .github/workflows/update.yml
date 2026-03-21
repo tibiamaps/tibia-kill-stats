@@ -2,13 +2,16 @@ name: 'Update data'
 
 on:
   schedule:
-    # Tibia.com kill stats update daily around 04:00 CE(S)T.
-    # Schedule the cron job for 04:30 CE(S)T, i.e. 02:30 UTC.
-    # https://www.tibiaqa.com/26439/when-and-how-often-the-kill-statistics-are-updated?show=26440#a26440
-    - cron: '30 02 * * *'
+    # Tibia.com kill stats update daily around 03:00–03:15 CE(S)T.
+    # Schedule the cron job for 04:00 CE(S)T.
+    # https://www.tibiaqa.com/26439/when-and-how-often-the-kill-statistics-are-updated
+    - cron: '00 04 * * *'
+      timezone: 'Europe/Berlin'
     # Schedule additional jobs in case something went wrong.
-    - cron: '30 03 * * *'
     - cron: '30 04 * * *'
+      timezone: 'Europe/Berlin'
+    - cron: '00 05 * * *'
+      timezone: 'Europe/Berlin'
   workflow_dispatch:
 
 jobs:
