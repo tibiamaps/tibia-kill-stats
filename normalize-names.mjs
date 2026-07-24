@@ -1275,7 +1275,7 @@ const normalizedToPrettyNames = new Map([
 	['mountain trolls', 'mountain troll'],
 	['muddy earth elementals', 'muddy earth elemental'],
 	['muglex clan assassins', 'muglex clan assassin'],
-	['muglex clan feetman', 'muglex clan feetman'],
+	['muglex clan feetman', 'muglex clan footman'],
 	['muglex clan scavengers', 'muglex clan scavenger'],
 	['mummies', 'mummy'],
 	['murderous ghosts', 'murderous ghost'],
