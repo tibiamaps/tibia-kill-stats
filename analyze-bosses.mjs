@@ -69,6 +69,7 @@ const BOSSES_PER_CATEGORY = new Map([
 		'Omrafir',
 		'Oodok Witchmaster',
 		'Orshabaal',
+		'Phosphorus',
 		'Phrodomo',
 		'Plagueroot',
 		'Raxias',
@@ -164,11 +165,13 @@ const BOSSES_PER_CATEGORY = new Map([
 		'Lord of the Elements',
 		'Lord Retro',
 		'Magma Bubble',
+		'Maior Domus',
 		'Mawhawk',
 		'Mazoran',
 		'Mazzinor',
 		'Megasylvan Yselda',
 		'Melting Frozen Horror',
+		'Mimar Haffar',
 		'Mitmah Vanguard',
 		'Murcion',
 		'Neferi the Spy',
@@ -208,6 +211,7 @@ const BOSSES_PER_CATEGORY = new Map([
 		'The Mega Magmaoid',
 		'The Monster',
 		'The Moonlight Aster',
+		'The Moonsnow Magnolia',
 		'The Nightmare Beast',
 		'The Pale Worm',
 		'The Rootkraken',
@@ -293,6 +297,7 @@ const BOSSES_PER_CATEGORY = new Map([
 		'Preceptor Lazare',
 		'Professor Maxxen',
 		'Rahemos',
+		'Rakesh Moonfang',
 		'Rotspit',
 		'Shadowstalker',
 		'Sugar Daddy',
@@ -750,6 +755,21 @@ const BOSSES_PER_CATEGORY = new Map([
 		'Ice Horror',
 		'The Gravedigger',
 		'Bone Overlord',
+	])],
+
+	['shards-of-a-broken-moon-boss', new Set([
+		// Bane boss.
+		'Rakesh Moonfang',
+		// Archfoe boss.
+		'The Moonsnow Magnolia',
+	])],
+
+	['make-believe-boss', new Set([
+		// Archfoe bosses.
+		'Maior Domus',
+		'Mimar Haffar',
+		// Nemesis boss.
+		'Phosphorus',
 	])],
 
 ]);
