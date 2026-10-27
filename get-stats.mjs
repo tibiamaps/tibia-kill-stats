@@ -1,28 +1,32 @@
 import * as fs from 'node:fs/promises';
 
+const API_URL = 'https://api.tibiadata.com/v5';
+
 const slugify = (name) => {
 	const slug = name.replaceAll(' ', '+');
 	return slug;
 };
 
+const fetchJson = async (url) => {
+	const response = await fetch(url);
+	if (!response.ok) {
+		throw new Error(`TibiaData API returned HTTP ${response.status} ${response.statusText} for ${url}`);
+	}
+	return response.json();
+};
+
 const getWorlds = async () => {
 	console.log('Getting list of Tibia worlds…');
-	const response = await fetch('https://api.tibiadata.com/v4/worlds');
-	const data = await response.json();
+	const data = await fetchJson(`${API_URL}/worlds`);
 	const regularWorlds = data.worlds.regular_worlds;
 	const worldNames = regularWorlds.map((world) => world.name);
 	return worldNames;
 };
 
 const getKillStatsForWorld = async (worldName) => {
-	try {
-		const response = await fetch(`https://api.tibiadata.com/v4/killstatistics/${slugify(worldName)}`);
-		const data = await response.json();
-		console.log(`Processing kill stats for world ${worldName}…`);
-		return data;
-	} catch (error) {
-		return getKillStatsForWorld(worldName);
-	}
+	const data = await fetchJson(`${API_URL}/killstatistics/${slugify(worldName)}`);
+	console.log(`Processing kill stats for world ${worldName}…`);
+	return data;
 };
 
 const doesFileExist = async (path) => {
