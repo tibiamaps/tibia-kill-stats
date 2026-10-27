@@ -38,6 +38,24 @@ const fileNames = glob.sync('./data/*/*.json', {
 	ignore: [
 		'./data/_global-total/*.json',
 		'./data/_yesterday/*.json',
+		// Former worlds as of 2026-10-22:
+		// https://www.tibia.com/news/?subtopic=newsarchive&id=8968
+		'./data/aethera/latest.json',
+		'./data/blumera/latest.json',
+		'./data/bravoria/latest.json',
+		'./data/cantabra/latest.json',
+		'./data/citra/latest.json',
+		'./data/etebra/latest.json',
+		'./data/gladibra/latest.json',
+		'./data/ignitera/latest.json',
+		'./data/kalimera/latest.json',
+		'./data/luzibra/latest.json',
+		'./data/noctalia/latest.json',
+		'./data/sombra/latest.json',
+		'./data/sonira/latest.json',
+		'./data/xybra/latest.json',
+		'./data/xymera/latest.json',
+		'./data/yubra/latest.json',
 		// Former worlds as of 2025-11-06:
 		// https://www.tibia.com/news/?subtopic=newsarchive&id=8513
 		'./data/vandera/latest.json',
